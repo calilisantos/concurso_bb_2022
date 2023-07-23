@@ -1,0 +1,5 @@
+pandas==2.0.3
+pivottablejs==0.9.0
+plotly==5.15.0
+#jupyter==1.0.0 # optional. For this project, i used jupyter VSCode extension
+tabula-py==2.7.0
