@@ -145,8 +145,6 @@ Aqui você vai encontrar os detalhes de como está estruturado e foi desenvolvid
 
 </details>
 
----
-
 <details>
   <summary><strong>Próximos passos</strong></summary><br />
 
@@ -158,6 +156,6 @@ Aqui você vai encontrar os detalhes de como está estruturado e foi desenvolvid
 
   * **Orquestrar o ambiente com Kubernetes**, garantido a escala e disponibilidade da execução do projeto para qualquer usuário.
 
-  ---
-
 </details>
+
+---
