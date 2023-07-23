@@ -42,19 +42,29 @@ Aqui você vai encontrar os detalhes de como está estruturado e foi desenvolvid
   * **[Pandas](https://pandas.pydata.org/):**
     * Ferramenta open source focada na facilidade para manipulação e análise de dados, totalmente integrada com a linguagem python
   * **[Pivot Table JS](https://github.com/nicolaskruchten/jupyter_pivottablejs):**
-    * Módulo para o jupyter notebook que cria uma interface gráfica para trabalhar com tabelas dinâmicas.
+    * Módulo usado no jupyter notebook que cria uma interface gráfica para manipulação e criação de visualizações à partir de tabelas dinâmicas.
   * **[Plotly](https://plotly.com/python/):**
     * Biblioteca python para construção de gráficos interativos e de qualidade.
   * **[Tabula](https://tabula-py.readthedocs.io/en/latest/):**
-    * É uma pacote adaptando para o python a biblioteca **tabula-java**, usado na leitura de tabelas PDF, convertendo-as por padrão em pandas dataframe.
+    * É uma pacote que adapta para o python a biblioteca **tabula-java**, usado na leitura de tabelas PDF, convertendo-as por padrão em  dataframes pandas.
 
-  *No arquivo de dependências [dev-requirements.txt](dev-requirements.txt) é listada a versão compatível com o projeto da biblioteca **jupyter**. Caso prefira utilizá-lo localmente, apague a hashtag (#) em **_#jupyter==1.0.0_** antes da instalação das dependências demonstrada abaixo.
+  *No arquivo de dependências [dev-requirements.txt](dev-requirements.txt) é listada a versão compatível com o projeto da biblioteca **jupyter**. Caso prefira executar o projeto localmente, apague a hashtag (#) em **_#jupyter==1.0.0_** antes da instalação das dependências demonstrada abaixo.
 
 </details>
 
 ---
     
 # Orientações
+
+<details>
+  <summary><strong>Requisitos para execução</strong></summary><br />
+
+  É necessária a instalação prévia do **python** e do gerenciador de pacotes **pip** para os passos a seguir.
+
+  O projeto foi construído com o **python na versão 3.8**, porém não se espera indisponibilidades da sua execução em versões posteriores nem à partir da versão 3.4. Qualquer incompatibilidade com a versão da sua máquina por favor informe.
+
+</details>
+
 
 <details>
   <summary><strong>Construindo um ambiente Python</strong></summary><br />
@@ -81,7 +91,7 @@ Aqui você vai encontrar os detalhes de como está estruturado e foi desenvolvid
   <summary><strong>Instalando as dependências do projeto</strong></summary><br />
 
   O arquivo dev-requirements lista as dependências utilizadas na construção desse projeto (versões das bibliotecas) e que devem ser instaladas para execução do código. 
-  Tendo o python e o pacote pip instalado na sua máquina e após a ativação do ambiente python caso tenha feito, navegue via terminal até o diretório onde foi clonado o projeto, abra a pasta **concurso_bb_2022** e execute o seguinte comando:
+  Tendo o python e o pacote pip instalado na sua máquina, e após a ativação do ambiente python caso tenha feito, na pasta **concurso_bb_2022** que é resultado do clone do repositório, execute o seguinte comando:
 
   `pip install -r dev-requirements.txt` 
 
@@ -96,9 +106,9 @@ Aqui você vai encontrar os detalhes de como está estruturado e foi desenvolvid
 <details>
   <summary><strong>Consumindo os dados transformados</strong></summary><br />
 
-  Como resultado da transformação, foram gerados os arquivos [**bb_2023_report.csv**](views/bb_2023_report.csv) e [**bb_2023_views.html**](views/bb_2023_views.html) que tem respectivamente os dados limpos e uma interface gráfica para exploração dos resultados.
+  Como resultado da transformação, são gerados os arquivos [**bb_2023_report.csv**](views/bb_2023_report.csv) e [**bb_2023_views.html**](views/bb_2023_views.html) que tem respectivamente os dados limpos e uma interface gráfica para exploração dos resultados.
 
-  **Ps:** O arquivo **bb_2023_report.csv** é separado por ponto e vírgula ( ; ). Considerar essa estrutura para consumo do arquivo.
+  **Ps:** O arquivo **bb_2023_report.csv** é separado por ponto e vírgula ( ; ). Considere essa estrutura para consumo do arquivo.
 
   ---
 
@@ -136,3 +146,18 @@ Aqui você vai encontrar os detalhes de como está estruturado e foi desenvolvid
 </details>
 
 ---
+
+<details>
+  <summary><strong>Próximos passos</strong></summary><br />
+
+  As features mapeadas são:
+
+  * **Adotar o paradigma POO** para processamento dos dados coletados, utilizando o TDD para garantir o design da aplicação;
+
+  * **Construir uma esteira de CI/CD** para garantir a governança das implementações do projeto;
+
+  * **Orquestrar o ambiente com Kubernetes**, garantido a escala e disponibilidade da execução do projeto para qualquer usuário.
+
+  ---
+
+</details>
