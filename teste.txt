@@ -1,1 +1,6 @@
-Teste
+- Para rodar o container:
+  docker-compose up -d 
+
+- Para derrubar o container:
+  docker-compose down --volumes --rmi all
+  

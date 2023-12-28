@@ -15,6 +15,3 @@ RUN pip install --trusted-host pypi.python.org -r dev-requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
-
-
-
