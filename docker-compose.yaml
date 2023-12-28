@@ -1,0 +1,23 @@
+version: '3'
+services:
+  python-app:
+    build: ./python-app
+    container_name: concurso_bb  # Nome do container
+    ports:
+      - "5000:80"
+    depends_on:
+      - postgres
+
+  java-app:
+    build: ./java-app
+    container_name: java-container  # Nome do container
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  postgres:
+    build: ./postgres
+    container_name: postgres-container  # Nome do container
+    ports:
+      - "5432:5432"
